@@ -1,0 +1,7 @@
+---
+- hosts: websrvs
+  remote_user: algo
+
+  tasks:
+  - name: stop nginx
+    shell: nginx -s stop
