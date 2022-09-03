@@ -1,0 +1,8 @@
+---
+- hosts: websrvs
+  remote_user: algo
+
+  tasks:
+  - name: start nginx
+    remote_user: algo
+    shell: chdir=/usr/local/nginx/sbin ./nginx
